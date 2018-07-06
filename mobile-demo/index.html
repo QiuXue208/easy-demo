@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>移动端demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo {
+            width: 20px;
+            height: 20px;
+            background: grey;
+            border-radius: 50%;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        ul>li {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: box;
+        }
+
+        .nav {
+            display: none;
+            background: grey;
+            margin-top: 20px;
+        }
+
+        .nav.active {
+            display: flex;
+            background: gray;
+            justify-content: space-between;
+        }
+
+        header {
+            padding: 10px;
+            position: relative;
+        }
+
+        header>.button {
+            position: absolute;
+            right: 10px;
+            top: 15px;
+        }
+
+        header>.nav2 {
+            display: none;
+        }
+
+        @media(min-width:451px) {
+            header>.button,
+            header>.nav.active {
+                display: none;
+            }
+            header {
+                display: flex;
+            }
+            header>.nav2>li {
+                margin: 0 5px;
+            }
+            header>.nav2 {
+                display: flex;
+                background: grey;
+                margin-left: 5px;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <button class="button" id="button">MENU</button>
+        <ul id="nav" class="nav">
+            <li>
+                <a href="#">nav-one</a>
+            </li>
+            <li>
+                <a href="#">nav-two</a>
+            </li>
+            <li>
+                <a href="#">nav-three</a>
+            </li>
+            <li>
+                <a href="#">nav-four</a>
+            </li>
+            <li>
+                <a href="#">nav-five</a>
+            </li>
+        </ul>
+        <ul class="nav2">
+            <li>
+                <a href="#">nav-one</a>
+            </li>
+            <li>
+                <a href="#">nav-two</a>
+            </li>
+            <li>
+                <a href="#">nav-three</a>
+            </li>
+            <li>
+                <a href="#">nav-four</a>
+            </li>
+            <li>
+                <a href="#">nav-five</a>
+            </li>
+        </ul>
+    </header>
+    <script>
+        button.onclick = function () {
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
