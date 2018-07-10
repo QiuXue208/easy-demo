@@ -8,3 +8,5 @@
 模拟百度输入框浏览地址：https://puppyer.github.io/easy-demo/baidu-demo/index.html
 
 简易布局demo浏览地址：https://puppyer.github.io/easy-demo/layout-demo/index.html
+
+图片选择器浏览地址：https://puppyer.github.io/easy-demo/image-picker/index.html
