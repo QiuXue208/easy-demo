@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .parent{
+    margin-left:auto;
+    margin-right:auto;
+    background:grey;
+  }
+  .child:nth-child(1){
+    float:left;
+    background:black;
+    color:white;
+    height:36px;
+    line-height:40px;
+    text-align:center;
+    width:100px;
+  }
+  .child:nth-child(2){
+    float:right;
+  }
+  .clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+  }
+  .clearfix{
+    zoom:1;
+  }   /* 想要IE6支持*/
+  .nav{
+    display:flex;
+    justify-content:space-between;
+  }
+  .nav.active{
+    display:flex;
+    justify-content:space-between;
+  }
+  .navItem{
+    margin-left:20px;
+  }
+  .parent .nav2{
+    display:none;
+  }
+  @media (max-width:420px){
+    .parent .nav2{
+      display:block;
+      padding:6px 0;
+    }
+    .parent .nav{
+      display:none;
+    }
+  }
+  .banner{
+    width:800px;
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    background: #888;
+    margin-top:10px;
+  }
+  @media (max-width:420px){
+    .banner{width:auto;}
+  }
+  .pictures{
+    background:#333;
+    width:800px;
+    margin:0 auto;
+    overflow:hidden;
+  }
+  @media (max-width:420px){
+    .pictures{
+      width:auto;
+    }
+  }
+  .pictures > .xxx{
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 -4px;
+  }
+  .picture{
+   width:calc(25% - 8px);
+   background:#888;
+   height:194px;
+   margin:4px;
+  }
+  @media (max-width:420px){
+   .picture{width:calc(50% - 8px);} 
+  }
+  .art{
+    width:800px;
+    margin:0 auto;
+    background:#333;
+    display:flex;
+    justify-content:space-between;
+  }
+  @media (max-width:420px){
+    .art{
+      width:auto;
+    flex-direction:column;
+    }
+  }
+  .art > .sider{
+    width: calc(33.33333% - 20px);
+    background:#888;
+    height:300px;
+    border:1px solid black;
+  }
+  .art > .main{   
+    width:66.66666%;
+    height:300px;
+    background:#888;
+    border:1px solid black;
+  }
+  @media (max-width:420px){
+    .art > .sider,
+    .art > .main{
+      width:auto;
+      height:auto;
+    }
+  }
