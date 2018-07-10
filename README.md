@@ -6,3 +6,5 @@
 简单的mobile-first例子浏览地址：https://puppyer.github.io/easy-demo/mobile-demo/index.html
 
 模拟百度输入框浏览地址：https://puppyer.github.io/easy-demo/baidu-demo/index.html
+
+简易布局demo浏览地址：https://puppyer.github.io/easy-demo/layout-demo/index.html
